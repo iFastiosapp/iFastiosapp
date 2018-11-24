@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iFast交易所</title>
+    <link type="text/css" rel="stylesheet" href="src/css/index.css">
+    <link type="text/css" rel="script" href="src/js/jquery.min.js">
+    <script>
+      window.onload = function(){
+        if(!is_weixn()){
+          var w = document.getElementById('wei_div');
+          w.style.display='none'
+        }
+      }
+      function is_weixn(){
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i)=="micromessenger") {
+          return true;
+        }else if(ua.match(/QQ/i) == "qq"){
+          return true;
+        } else {
+          return false;
+        }
+      }
+      function onDistrust() {
+        document.getElementById('method').style.display = 'block'
+      }
+      function onWeb() {
+        if(is_weixn()){
+          alert('点击右上角按钮,然后在弹出的菜单中点击Safari中打开，即可安装')
+          window.alert = function(str){return ;}
+        }
+      }
+      function onCloseDistrust() {
+        document.getElementById('method').style.display = 'none'
+      }
+    </script>
+</head>
+<body>
+<div class="wei_div" id="wei_div">
+    <div class="wei_txt">点击右上角按钮,然后在弹出的菜单中点击Safari中打开，即可安装</div>
+    <img class="wei_icon" src="src/img/arrow.png">
+</div>
+<div class="topImg"></div>
+<div class="main">
+    <div class="mainImg" >
+        <img class="appIcon" src="ifast_512x512.png">
+    </div>
+    <div >
+        <img class="apple_icon" src="src/img/apple_logo.jpeg">
+        <span class="cjlzx">iFast交易所</span>
+        <span class="edition">企业版</span>
+    </div>
+    <div class="edition_size">
+        <span>版本：1.1.1</span>
+        &nbsp;&nbsp;
+        <span>大小：25.6M</span>
+    </div>
+    <div class="qrCodeDiv">
+        <img class="qrCode" src="src/img/cjl-ios.png">
+    </div>
+    <div class="distrust">
+        <p onclick="onDistrust();"><img class="finger" src="src/img/finger.png">"未受信任的企业级开发者"的解决办法</p>
+    </div>
+    <div onclick="onWeb()">
+        <a class="download" href="itms-services://?action=download-manifest&url=https://github.com/iFastiosapp/iFastiosapp.github.io/raw/master/manifest.plist">点击安装</a>
+    </div>
+    <div style="text-align:center; ">
+        <p style="padding-top:10px;color:#969b9d;">或者用手机扫描二维码安装</p>
+    </div>
+</div>
+<div class="foot">
+    <a href="https://ifast.one/" class="cjl">iFast交易所</a>
+</div>
+
+<div class="method" id="method">
+    <div class="close_div" onclick="onCloseDistrust()">
+        <img class="close" src="src/img/close.png">
+    </div>
+    <div style="padding-right: 60px;">
+        <div>因苹果公司的政策原因,在iOS系统中首次安装企业版应用时会出现"未受信任的企业级开发者"提示</div>
+        <div class="center">
+            <img class="disImg" src="src/img/dis1.jpeg">
+        </div>
+    </div>
+    <div>解决办法如下(以iOS10系统为例)：</div>
+    <div >
+        <div>1.在手机中打开设置功能，选择通用</div>
+        <div class="center">
+            <img class="disImg" src="src/img/dis2.jpeg">
+        </div>
+    </div>
+    <div>
+        <div>2.在通用中，选择"设备管理"功能</div>
+        <div class="center">
+            <img class="disImg" src="src/img/dis3.jpeg">
+        </div>
+    </div>
+    <div>
+        <div>3.在设备管理中的企业级应用分类中，选择要安装的企业级应用的文件名称(与打开时的提示一致)，点击进入</div>
+        <div class="center">
+            <img class="disImg" src="src/img/dis4.jpeg">
+        </div>
+    </div>
+    <div>
+        <div>4.进入企业签名页面后，确认企业签名中的公司名称与应用名称后，点击信任"企业签名公司名称"</div>
+        <div class="center">
+            <img class="disImg" src="src/img/dis5.jpeg">
+        </div>
+    </div>
+    <div>
+        <div>5。回到桌面，重新打开应用即可使用</div>
+    </div>
+</div>
+</body>
+</html>

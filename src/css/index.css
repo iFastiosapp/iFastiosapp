@@ -1,6 +1,6 @@
 body{
     padding: 0;
-    font-size: 24px;
+    font-size: 0.4cm;
     margin: 0 auto;
 }
 .topImg{
@@ -30,20 +30,18 @@ body{
     height: 16px;
 }
 .cjlzx{
-    font-size: 30px;
+    
 }
 .edition{
     background-color: #40acf1;
     border-radius:5px;
     color: #ffffff;
     padding: 2px 10px 2px 10px;
-    font-size: 20px;
 }
 .edition_size{
     color: #969b9d;
 }
 .edition_size span{
-    font-size: 24px;
 }
 .qrCodeDiv{
     width: 100%;
@@ -63,14 +61,12 @@ body{
     box-shadow: 0 0 10px #b8b7bf;
 }
 span{
-    font-size: 24px;
 }
 .download{
     background-color: #40acf1;
     border-radius:10px;
     color: #ffffff;
     padding: 15px 80px 15px 80px;
-    font-size: 20px;
     text-decoration: none;
 }
 .txtAline{
@@ -84,10 +80,8 @@ span{
 .cjl{
     color: #1abc9c;
     text-decoration: none;
-    font-size: 24px;
 }
 .wei_div{
-    font-size: 40px;
     background-color: #56555d;
     color: #eeeeee;
     display: flex;

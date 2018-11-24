@@ -7,9 +7,9 @@
     <link type="text/css" rel="script" href="src/js/jquery.min.js">
     <script>
       window.onload = function(){
-        if(is_weixn()){
+        if(!is_weixn()){
           var w = document.getElementById('wei_div');
-          w.style.display='block'
+          w.style.display='none'
         }
       }
       function is_weixn(){
@@ -37,7 +37,7 @@
     </script>
 </head>
 <body>
-<div class="wei_div" id="wei_div" style="display: none">
+<div class="wei_div" id="wei_div">
     <div class="wei_txt">点击右上角按钮,然后在弹出的菜单中点击Safari中打开，即可安装</div>
     <img class="wei_icon" src="src/img/arrow.png">
 </div>

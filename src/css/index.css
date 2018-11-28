@@ -41,6 +41,7 @@ body{
 }
 .edition_size{
     color: #969b9d;
+    height: 50px;
 }
 .edition_size span{
     font-size: 24px;
@@ -62,12 +63,21 @@ body{
     height: 250px;
     box-shadow: 0 0 10px #b8b7bf;
 }
-.download{
+.onweb{
+    margin-top: 20px;
+}
+.downloadios{
     background-color: #40acf1;
     border-radius:10px;
     color: #ffffff;
     padding: 15px 80px 15px 80px;
-    font-size: 20px;
+    text-decoration: none;
+}
+.downloadand{
+    background-color: #40acf1;
+    border-radius:10px;
+    color: #ffffff;
+    padding: 15px 50px 15px 50px;
     text-decoration: none;
 }
 .txtAline{
@@ -119,9 +129,6 @@ body{
 .center{
     text-align: center;
 }
-
-
-
 .wei_icon{
     width: 50px;
     height: 50px;
@@ -144,7 +151,25 @@ body{
     width: 20%;
 }
 
+.app{
+    height: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.app_icon_div{
+    margin-bottom: 20px;
+}
+.ios{
+    float: left;
+    width: 280px;
+}
+.android{
+    float: right;
+    width: 280px;
+}
 
-
-
+.app_icon{
+    width: 50px;
+    height: 50px;
+}
 

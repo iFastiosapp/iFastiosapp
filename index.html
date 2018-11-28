@@ -10,9 +10,7 @@
         if(is_weixn()){
           var w = document.getElementById('wei_div');
           w.style.display='block'
-        }
-        if (is_weixn()){
-          document.getElementById('onweb').innerHTML = '<a class="download">点击安装</a>'
+          document.getElementById('onweb').innerHTML = '<a class="download">下载iOS版</a>'
         }
       }
       function is_weixn(){
@@ -31,8 +29,6 @@
       function onWeb() {
         if(is_weixn()){
           alert('点击右上角按钮,然后在弹出的菜单中点击Safari中打开，即可安装')
-        }else {
-          document.getElementById('onweb').innerHTML = '<a class="download">等待安装</a>'
         }
       }
       function onCloseDistrust() {
@@ -59,8 +55,6 @@
     </div>
     <div class="edition_size">
         <span>版本：1.1.1</span>
-        &nbsp;&nbsp;
-        <span>大小：25.6M</span>
     </div>
     <div class="qrCodeDiv">
         <img class="qrCode" src="src/img/ifast-ios.png">
@@ -68,15 +62,46 @@
     <div class="distrust">
         <p onclick="onDistrust();"><img class="finger" src="src/img/finger.png">"未受信任的企业级开发者"的解决办法</p>
     </div>
-    <div onclick="onWeb()">
-        <a class="download" href="itms-services://?action=download-manifest&url=https%3A%2F%2Fwww.pgyer.com%2Fapiv2%2Fapp%2Fplist%3FappKey%3D63fff624b3f608074232426baf6af996%26_api_key%3D8e61399498758e977a09c530f13186e2">点击安装</a>
-    </div>
     <div style="text-align:center; ">
         <p style="padding-top:10px;color:#969b9d;">或者用手机扫描二维码安装</p>
     </div>
 </div>
+
+<div class="app">
+    <div class="ios">
+        <div class="center app_icon_div">
+            <img class="app_icon" src="src/img/ios.png">
+        </div>
+        <div class="center edition_size">
+            <span>版本：1.1.1</span>
+            <span>大小：25.6M</span>
+        </div>
+        <div class="center onweb" id="onweb">
+            <div onclick="onWeb()" >
+                <a class="downloadios" href="itms-services://?action=download-manifest&url=https%3A%2F%2Fwww.pgyer.com%2Fapiv2%2Fapp%2Fplist%3FappKey%3D63fff624b3f608074232426baf6af996%26_api_key%3D8e61399498758e977a09c530f13186e2">
+                    下载iOS版
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="android">
+        <div class="center app_icon_div">
+            <img class="app_icon" src="src/img/android.png">
+        </div>
+        <div class="center edition_size">
+            <span>版本：1.1.1</span>
+            <span>大小：13.8M</span>
+        </div>
+        <div class="center onweb" >
+            <a class="downloadand" href="https://www.pgyer.com/apiv2/app/install?appKey=27a4a489d33a4d80ab43d483603a0488&_api_key=8e61399498758e977a09c530f13186e2">
+                下载android版
+            </a>
+        </div>
+    </div>
+</div>
+
 <div class="foot">
-    <a href="https://ifast.one/" class="cjl">iFast交易所</a>
+    <a href="https://ifast.one/" class="cjl">iFast exchange</a>
 </div>
 
 <div class="method" id="method">

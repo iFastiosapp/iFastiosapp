@@ -1,2 +1,2 @@
 # iFastiosapp
-iFast-iosapp
+iFastapp下载地址
